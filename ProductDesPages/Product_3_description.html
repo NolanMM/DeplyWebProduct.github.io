@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <!-- NavBar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><i class="fas fa-gem"></i> Digital Product Project
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"> </span>
+
+          <span class="bar"> </span>
+
+          <span class="bar"> </span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/Course.html" class="navbar__links">Courses</a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Products</a>
+          </li>
+
+          <li class="navbar__btn">
+            <a href="#" class="button" id="btnLogin-popup">Sign In</a>
+          </li>
+        </ul>
+      </div>
+</nav>
+  <section>
+    <div class="container flex">
+      <div class="left">
+        <div class="main_image">
+          <img src="/images/image/pic13.png" class="slide">
+        </div>
+        <div class="option flex">
+          <img src="/images/image/pic13.png" onclick="img('/images/image/pic13.png')">
+          <img src="/images/image/pic14.png" onclick="img('/images/image/pic14.png')">
+          <img src="/images/image/pic15.png" onclick="img('/images/image/pic15.png')">
+          <img src="/images/image/pic16.png" onclick="img('/images/image/pic16.png')">
+          <img src="/images/image/pic17.png" onclick="img('/images/image/pic17.png')">
+          <img src="/images/image/pic18.png" onclick="img('/images/image/pic18.png')">
+        </div>
+      </div>
+      <div class="right">
+        <h3>Spotify Theme POWERPOINT</h3>
+        <h4> <small>$</small>2.99 </h4>
+        <p>This is the template powerpoint build based on theme of Spotify</p>
+        <a href="/Products.html" class=""><button>Add to Bag</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.home');
+      line.style.background = change;
+    }
+  </script>
+
+</body>
+
+</html>
